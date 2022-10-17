@@ -2,9 +2,9 @@ function menuItem(props) {
     return (
         <div className="menu-item-container">
             <div className='menu-item-name'>
-                <p> {props.name} </p>
+                <p className="menu-item-name"> {props.name} </p>
                 <p>  {props.price}$ </p>
-                <p>  {props.type} </p>
+                <p className="menu-item-type">  {props.type} </p>
             </div>
             <div className='menu-item-ingredients'>
                 {props.ingredients}

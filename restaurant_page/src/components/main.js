@@ -48,7 +48,7 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.pizzaMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients}/>;
+                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients} type={item.type}/>;
                         })}
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.pastaMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients}/>;
+                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients} type={item.type}/>;
                         })}
                     </div>
                 </div>

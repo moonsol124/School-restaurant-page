@@ -89,8 +89,9 @@
 .menu-item-name {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
     gap: 1rem;
 }   
 
@@ -167,6 +168,14 @@
 }
 .drink {
     background-image: url('../imgs/cocktail.png');
+}
+
+.menu-item-name {
+    font-weight: bold;
+}
+.menu-item-type {
+    font-size: 11px;
+    color: tomato;
 }
 /* <a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a> */
 
