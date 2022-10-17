@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/School-restaurant-page/static/css/main.3604c478.css",
+    "main.js": "/School-restaurant-page/static/js/main.cc5fa36a.js",
+    "static/js/787.61d8fd69.chunk.js": "/School-restaurant-page/static/js/787.61d8fd69.chunk.js",
+    "static/media/bg3.png": "/School-restaurant-page/static/media/bg3.271b313930644b9fdf91.png",
+    "static/media/bg1.jpeg": "/School-restaurant-page/static/media/bg1.f044933d4ed9e664c097.jpeg",
+    "static/media/bg2.jpeg": "/School-restaurant-page/static/media/bg2.9a60cd524d35bf4195bc.jpeg",
+    "static/media/logo.svg": "/School-restaurant-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/School-restaurant-page/index.html",
+    "main.3604c478.css.map": "/School-restaurant-page/static/css/main.3604c478.css.map",
+    "main.cc5fa36a.js.map": "/School-restaurant-page/static/js/main.cc5fa36a.js.map",
+    "787.61d8fd69.chunk.js.map": "/School-restaurant-page/static/js/787.61d8fd69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3604c478.css",
+    "static/js/main.cc5fa36a.js"
+  ]
+}
