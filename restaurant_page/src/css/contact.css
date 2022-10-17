@@ -1,0 +1,21 @@
+.contact {
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.contact-ul {
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+}

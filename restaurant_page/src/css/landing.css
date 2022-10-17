@@ -1,0 +1,151 @@
+:root {
+    --landing-font-color: RGB(230, 230, 230);
+    --big-texts: 14vmin;
+    --medium-texts: 6vmin;
+    --small-texts-p: 5vmin;
+    --extra-small-texts-p: 4vmin;
+    --smallest-texts-p: 3.5vmin;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+/* image src: https://www.freepik.com/free-photo/spices-black-background-space-text_9433909.htm#query=pizza%20background&position=21&from_view=search&track=sph
+            by: pvproductions */
+.landing::before {
+    background-image: url('../imgs/bg1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    opacity: .45;
+}
+
+.landing-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.landing-header-title {
+    font-size: var(--big-texts);
+    text-align: center;
+    width: 100%;
+}
+
+.landing-hr-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-hr {
+    /* background-color: white; */
+    width: 100%;
+    height: 2px;
+    max-width: 800px;
+    background: linear-gradient(to right, black 0%, green 50%, tomato 100%);
+}
+
+.landing-header-p {
+    font-size: var(--small-texts-p);
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+
+.landing-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.landing-info-container {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    justify-items: center;
+    color: var(--landing-font-color);
+}
+
+/* .landing-info-title {
+    text-align: center;
+} */
+.landing-info-vl {
+    width: 100%;
+    /* background-color: white; */
+    border-radius: 5px;
+    background: linear-gradient(white 0%, green 50%, tomato 100%);
+}
+
+.landing-info-ul-2 {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.landing-info-ul-li {
+    text-align: end;
+}
+
+.landing-info-ul-1 {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    justify-items: flex-end;
+    padding: 1rem;
+}
+
+.opening-time-days {
+    font-size: var(--extra-small-texts-p);
+}
+.opening-time-address {
+    font-size: var(--smallest-texts-p);
+}
+
+@media screen and (max-width: 800px) {
+    .landing-header {
+        padding-left: 20vmin;
+    }
+    .landing-header-title {
+        text-align: end;
+    }
+    .landing-header-p {
+        text-align: end;
+    }
+}
+
+
+.landing-header-texts {
+    color: var(--landing-font-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}

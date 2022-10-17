@@ -1,0 +1,174 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+    background-color: black;
+    padding: 2rem;
+}
+
+/* <a href="https://www.freepik.com/free-photo/vintage-old-rustic-cutlery-dark_6216945.htm#query=pizza%20background&position=19&from_view=search&track=sph">Image by valeria_aksakova</a> on Freepik */
+.main::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/bg3.png');
+    position: absolute;
+    background-position: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .2;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.main-header-texts {
+    margin-top: 40px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main-header {
+        padding-left: 20vmin;
+    }
+    .main-content {
+        padding-left: 20vmin;
+    }
+}
+
+.main-content {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    color:RGB(230, 230, 230);
+}
+
+.main-menu-name {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-menu-img-container {
+    width: 60px;
+    height: 60px;
+    background-color: tomato;
+    border: 3px solid white;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+.main-menu-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-item-name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+}   
+
+.menu-item-title {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.menu-item-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-menu-items {
+    width: 100%;
+    max-width: 500px;
+}
+
+.menu-item-ingredients {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+}
+
+.menu-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-header-tiitle {
+    font-size: var(--big-texts);
+}
+
+.main-header-subtitle {
+    font-size: var(--small-texts-p);
+    font-style: italic;
+}
+
+.main-hr-container {
+    width: 100%;
+    height: 2px;
+}
+
+.main-hr {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black 0%, green 50%, tomato 100%);
+}
+
+.entry {
+    background-image: url('../imgs/restaurant.png');
+}
+.pizza {
+    background-image: url('../imgs/pizza.png');
+}
+.pasta {
+    background-image: url('../imgs/farfalle.png');
+}
+.drink {
+    background-image: url('../imgs/cocktail.png');
+}
+/* <a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a> */
+
+/* <a href="https://www.flaticon.com/free-icons/pasta" title="pasta icons">Pasta icons created by Icongeek26 - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons">Food and restaurant icons created by Triangle Squad - Flaticon</a> */

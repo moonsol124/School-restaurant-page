@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+.horizontal-line-container {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black 0%, green 50%, tomato 100%);
+}
