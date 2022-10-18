@@ -1,14 +1,24 @@
 .menu-btn,
 .home-btn {
-    top: 10px;
-    width: 50px;
-    height: 50px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     z-index: 999;
 }
 .menu-btn {
-    left: 10px;
+    background: url('../imgs/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 7vmin;
+    border-radius: 100%;
 }
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
 .home-btn {
     right: 10px;
 }
@@ -16,21 +26,93 @@
 .toggled-menu {
     height: 80vh;
     position: fixed;
-    top: 60px;
+    top: 100px;
+    left: 7vmin;
     z-index: 999;
+    animation: menu-appear .7s ease-in-out forwards;
 }
 
 .toggled-menu-ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 1.5rem;
+    /* background-color: red; */
 }
 
 .toggled-menu-item {
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: tomato;
+    border: solid black;
     border-radius: 100%;
-    padding: 1rem;
+    padding: 10px;
+}
+
+.menu-home,
+.menu-about,
+.menu-menu,
+.menu-contact,
+.menu-this-site {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.menu-home:hover,
+.menu-about:hover,
+.menu-menu:hover,
+.menu-contact:hover,
+.menu-this-site:hover {
+    animation: menu-item-rotate infinite 3s forwards;
+}
+
+.menu-home {
+    background: url('../imgs/homepage\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-about {
+    background: url('../imgs/info-button.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-menu {
+    background: url('../imgs/menu\ \(1\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-contact {
+    background: url('../imgs/call.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-this-site {
+    background: url('../imgs/questionmark.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes menu-appear {
+    0% {
+        clip-path: inset(0 0 100% 0);
+    }    
+    100% {
+        clip-path: inset(0 0 0% 0);
+    }
+}
+
+@keyframes menu-item-rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }

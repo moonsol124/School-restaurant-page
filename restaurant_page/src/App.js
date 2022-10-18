@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from './components/menu';
 import { React, useState, useEffect } from 'react';
 import ToggledMenu from './components/toggledMenu';
+import Site from './components/thisSite';
 
 function App() {
   const [menuToggled, setMenuToggled] = useState(false);
@@ -37,13 +38,18 @@ function App() {
     }
   }
 
+  function closeMenu() {
+    setMenuToggled(false);
+  }
+
   return (
     <div className="app">
       <BrowserRouter>
         <Menu toggleMenu={toggleMenu}/>
-        {(menuToggled)?<ToggledMenu/>:null}
+        {(menuToggled)?<ToggledMenu closeMenu={closeMenu}/>:null}
         <Routes>
-          <Route path='/' element={<Home entryMenu={entryMenu} pizzaMenu={pizzaMenu} pastaMenu={pastaMenu} drinkMenu={drinkMenu}/>}></Route>
+          <Route path='/home/' element={<Home entryMenu={entryMenu} pizzaMenu={pizzaMenu} pastaMenu={pastaMenu} drinkMenu={drinkMenu}/>}></Route>
+          <Route path='/home/site_info/' element={<Site/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
