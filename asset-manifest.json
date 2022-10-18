@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.eac3aa03.css",
-    "main.js": "/home/static/js/main.366a616c.js",
-    "static/js/787.61d8fd69.chunk.js": "/home/static/js/787.61d8fd69.chunk.js",
-    "static/media/bg3.png": "/home/static/media/bg3.271b313930644b9fdf91.png",
-    "static/media/bg1.jpeg": "/home/static/media/bg1.f044933d4ed9e664c097.jpeg",
-    "static/media/bg4.jpeg": "/home/static/media/bg4.e34790d326dbceaf60fa.jpeg",
-    "static/media/bg2.jpeg": "/home/static/media/bg2.9a60cd524d35bf4195bc.jpeg",
-    "static/media/questionmark.png": "/home/static/media/questionmark.667c85cc2cf38be758d4.png",
-    "static/media/logo.svg": "/home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/home/index.html",
-    "main.eac3aa03.css.map": "/home/static/css/main.eac3aa03.css.map",
-    "main.366a616c.js.map": "/home/static/js/main.366a616c.js.map",
-    "787.61d8fd69.chunk.js.map": "/home/static/js/787.61d8fd69.chunk.js.map"
+    "main.css": "/School-restaurant-page/static/css/main.b7852908.css",
+    "main.js": "/School-restaurant-page/static/js/main.8ac1d574.js",
+    "static/js/787.61d8fd69.chunk.js": "/School-restaurant-page/static/js/787.61d8fd69.chunk.js",
+    "static/media/bg3.png": "/School-restaurant-page/static/media/bg3.271b313930644b9fdf91.png",
+    "static/media/bg1.jpeg": "/School-restaurant-page/static/media/bg1.f044933d4ed9e664c097.jpeg",
+    "static/media/bg4.jpeg": "/School-restaurant-page/static/media/bg4.e34790d326dbceaf60fa.jpeg",
+    "static/media/bg2.jpeg": "/School-restaurant-page/static/media/bg2.9a60cd524d35bf4195bc.jpeg",
+    "static/media/questionmark.png": "/School-restaurant-page/static/media/questionmark.667c85cc2cf38be758d4.png",
+    "static/media/logo.svg": "/School-restaurant-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/School-restaurant-page/index.html",
+    "main.b7852908.css.map": "/School-restaurant-page/static/css/main.b7852908.css.map",
+    "main.8ac1d574.js.map": "/School-restaurant-page/static/js/main.8ac1d574.js.map",
+    "787.61d8fd69.chunk.js.map": "/School-restaurant-page/static/js/787.61d8fd69.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eac3aa03.css",
-    "static/js/main.366a616c.js"
+    "static/css/main.b7852908.css",
+    "static/js/main.8ac1d574.js"
   ]
 }
