@@ -43,7 +43,7 @@ function Main(props) {
                         </div>
                         <div>
                             <h3> Pizza </h3>
-                            <p> To start with</p>
+                            <p> A heavenly taste</p>
                         </div>
                     </div>
                     <div className="menu-items">
@@ -62,7 +62,7 @@ function Main(props) {
                         </div>
                         <div>
                             <h3> Pasta </h3>
-                            <p> To start with</p>
+                            <p> A delightful delicacy</p>
                         </div>
                     </div>
                     <div className="menu-items">
@@ -81,7 +81,7 @@ function Main(props) {
                         </div>
                         <div>
                             <h3> Drink </h3>
-                            <p> To start with</p>
+                            <p> A fantastic time</p>
                         </div>
                     </div>
                     <div className="menu-items">

@@ -36,7 +36,6 @@
     display: flex;
     flex-direction: column;
     color: white;
-    font-weight: bold;
     position: relative;
     z-index: 1;
     gap: 1rem;
@@ -89,7 +88,7 @@
 .menu-item-name {
     width: 100%;
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 1rem;
@@ -176,6 +175,11 @@
 .menu-item-type {
     font-size: 11px;
     color: tomato;
+}
+
+.menu-item-name-title {
+    text-align: start;
+    width: 100%;
 }
 /* <a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a> */
 

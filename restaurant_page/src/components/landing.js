@@ -31,7 +31,7 @@ function Landing() {
                                 <p className="opening-time-address">MARGARITA STREET ST.MARTIN, 5252AH, PIZZALAND</p>
                             </li>
                             <li> 
-                                <p className="opening-time-address">TEL: 31625128692</p>
+                                <p className="opening-time-address">+31625128692</p>
                             </li>
                         </ul>
                     </div>

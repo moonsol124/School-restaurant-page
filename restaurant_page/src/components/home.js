@@ -2,6 +2,7 @@ import Landing from './landing';
 import Main from './main';
 import About from './about';
 import Contact from './contact';
+
 import '../index.css';
 
 function Home(props) {
