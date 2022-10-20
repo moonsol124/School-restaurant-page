@@ -27,7 +27,7 @@ function ToggledMenu(props) {
                     <div className="menu-contact" onClick={()=>{navigateHome('contact')}}></div>
                 </li>
                 <li className="toggled-menu-item">
-                    <Link to='/home/site_info'><div className="menu-this-site"></div></Link>
+                    <Link to='/School-restaurant-page/site_info'><div className="menu-this-site"></div></Link>
                 </li>
             </ul>
         </div>

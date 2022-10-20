@@ -2,13 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Menu from './components/menu';
 import { React, useState, useEffect } from 'react';
-import ToggledMenu from './components/toggledMenu';
 import Site from './components/thisSite';
+import useToken from './components/token';
+import LogIn from './components/login';
+import Register from './components/register';
+import Nav from './components/nav';
+import { getSuggestedQuery } from '@testing-library/react';
 
 function App() {
-  const [menuToggled, setMenuToggled] = useState(false);
+  const [user, setUser] = useState('Stranger');
+  const [userLogged, setUserLogged] = useState(false);
+  const { token, removeToken, setToken } = useToken();
   const [entryMenu, setEntryMenu] = useState([{name: 'Melanzane', price: 4, ingredients: 'Rocket, courgette, grilled aubergine, bell pepper, tomato, basil and Parmesan cheese', type:'V'},
   {name: 'Pollo alla Griglia', price: 8, ingredients: 'Grilled chicken, aubergine, bell pepper, rocket and courgette'},
   {name: 'Tonno', price: 14, ingredients: 'Tuna salad, rocket, red onion, capers and parsley', type:'V, GF'},
@@ -26,30 +31,27 @@ function App() {
   {name: 'Abel Mendoza Viura', price: 89, ingredients: 'White Wine from Rioja, Spain'},
   {name: 'Olivier Leflaive', price: 109, ingredients: 'White Wine from St Aubin, Burgundy, France'}]); 
 
-  // useEffect(() => {
-  // }, [menuToggled])
-
-  function toggleMenu() {
-    if (menuToggled) {
-      setMenuToggled(false);
-    }
-    else {
-      setMenuToggled(true);
-    }
+  function getUser(user) {
+    setUser(user)
   }
 
-  function closeMenu() {
-    setMenuToggled(false);
+  function userLoggin() {
+    setUserLogged(true);
+  }
+
+  function userLogout() {
+    setUserLogged(false);
   }
 
   return (
     <div className="app">
       <BrowserRouter>
-        <Menu toggleMenu={toggleMenu}/>
-        {(menuToggled)?<ToggledMenu closeMenu={closeMenu}/>:null}
+      <Nav user={user} userLogged={userLogged} removeToken={removeToken}/>
         <Routes>
-          <Route path='/home/' element={<Home entryMenu={entryMenu} pizzaMenu={pizzaMenu} pastaMenu={pastaMenu} drinkMenu={drinkMenu}/>}></Route>
-          <Route path='/home/site_info/' element={<Site/>}></Route>
+          <Route path='/School-restaurant-page' element={<Home entryMenu={entryMenu} pizzaMenu={pizzaMenu} pastaMenu={pastaMenu} drinkMenu={drinkMenu}/>}></Route>
+          <Route path='/School-restaurant-page/site_info/' element={<Site/>}></Route>
+          <Route path='/School-restaurant-page/login/' element={<LogIn userLoggin={userLoggin} getUser={getUser} token={token} setToken={setToken}/>}></Route>
+          <Route path='/School-restaurant-page/register/' element={<Register />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

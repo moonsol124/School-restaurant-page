@@ -1,0 +1,9 @@
+.nav {
+    position: absolute;
+    color: white;
+    z-index: 999;
+    right: 10px;
+    top: 20px;
+    display: flex;
+    gap: 1rem;
+}

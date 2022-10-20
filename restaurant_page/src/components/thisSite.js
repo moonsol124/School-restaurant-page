@@ -23,7 +23,7 @@ function Site() {
                     <p> https://freeicons.io/search/icons?q=menu&iuc=1058605951&page=4 </p>
                 </div>
                 <div className="thisSite-btn-container">
-                    <Link to='/home/'><button className="thisSite-btn"> Back to main</button></Link>
+                    <Link to='/School-restaurant-page'><button className="thisSite-btn"> Back to main</button></Link>
                 </div>
             </div>
         </div>
