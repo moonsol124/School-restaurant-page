@@ -29,7 +29,6 @@ function Register(props) {
         fetch(url, requestOptions)
         .then(data => data.json())
         .then(res => {
-            console.log (res)
             if (res.status !== 'success') {
                 setMessage(res.message);
                 return;

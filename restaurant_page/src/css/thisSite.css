@@ -1,7 +1,9 @@
 .thisSite-container {
     width: 100%;
+    height: 100vh;
     position: relative;
     background-color: black;
+    overflow: auto;
 }
 
 .thisSite-container:before {
@@ -21,6 +23,7 @@
 }
 
 .thisSite-texts {
+    margin-top: 40px;
     color: white;
     width: 100%;
     display: flex;

@@ -94,6 +94,15 @@
     gap: 1rem;
 }   
 
+.menu-order-item-name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}   
+
 .menu-item-title {
     width: 100%;
     display: grid;
@@ -180,6 +189,33 @@
 .menu-item-name-title {
     text-align: start;
     width: 100%;
+}
+
+.order-btn {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.order-btn-form {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    color: tomato;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.order-checkbox-container {
+    position: relative;
+    z-index: 1;
 }
 /* <a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a> */
 

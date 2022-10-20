@@ -9,10 +9,10 @@ function Site() {
                     <p className="landing-header-title thisSite-texts"> Site info and image sources</p>
                     <p className="this-site-p">Hi, my name is Sol Moon</p> 
                     <p className="this-site-p"> I study ICT at Fontys Hogeschool(Netherlands) and I made this webpage as part of an assignment.</p>
-                    <p className="this-site-p">In the original assignment, it's an application involving the use of Flask as a backend and a small arduino to simulate a real restaurant.</p>
-                    <p className="this-site-p">But on github I only uploaded the static front end part of the application.</p>
+                    <p className="this-site-p">This website is meant to be a full-stack application using Flask as backend and mongodb as database.</p>
+                    <p className="this-site-p">This website allows users to create an account, login and submit orders with a form.</p>
+                    <p className="this-site-p">The backend application manages REST api for user and order creation.</p>
                     <p className="this-site-p">This website is fully responsive.</p>
-                    <p className="this-site-p">Thanks for viewing my webpage. I hope you liked it.</p>
                     <p > image sources: </p>
                     <p> landing page: https://www.freepik.com/free-photo/spices-black-background-space-text_9433909.htm#query=pizza%20background&position=21&from_view=search&track=sph
             by: pvproductions </p>

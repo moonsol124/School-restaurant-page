@@ -8,9 +8,11 @@ import useToken from './components/token';
 import LogIn from './components/login';
 import Register from './components/register';
 import Nav from './components/nav';
-import { getSuggestedQuery } from '@testing-library/react';
+import Order from './components/order';
+import OrderComplete from './components/orderComplete';
 
 function App() {
+  const [orderNumber, setOrderNumber] = useState('');
   const [user, setUser] = useState('Stranger');
   const [userLogged, setUserLogged] = useState(false);
   const { token, removeToken, setToken } = useToken();
@@ -39,8 +41,8 @@ function App() {
     setUserLogged(true);
   }
 
-  function userLogout() {
-    setUserLogged(false);
+  function getOrderNumber(orderNumber) {
+    setOrderNumber(orderNumber);
   }
 
   return (
@@ -52,6 +54,8 @@ function App() {
           <Route path='/School-restaurant-page/site_info/' element={<Site/>}></Route>
           <Route path='/School-restaurant-page/login/' element={<LogIn userLoggin={userLoggin} getUser={getUser} token={token} setToken={setToken}/>}></Route>
           <Route path='/School-restaurant-page/register/' element={<Register />}></Route>
+          <Route path='/School-restaurant-page/order/' element={<Order getOrderNumber={getOrderNumber} entryMenu={entryMenu} pizzaMenu={pizzaMenu} pastaMenu={pastaMenu} drinkMenu={drinkMenu} />}></Route>
+          <Route path='/School-restaurant-page/order/complete' element={<OrderComplete orderNumber={orderNumber}/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

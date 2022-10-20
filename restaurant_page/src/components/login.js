@@ -34,23 +34,6 @@ function LogIn(props) {
         })
     }
   
-    function test() {
-      const url = 'http://localhost:5000/register';
-      
-      const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json; charset=UTF=8',
-      'Authorization': 'Bearer '+props.token },
-        body: JSON.stringify({ "hi": "hi" })
-     };
-        fetch(url, requestOptions)
-        .then(data => data.json())
-        .then(res => {
-          // props.setToken(res.access_token);
-          console.log (res)
-        })
-    }
-  
     return (
         <div className='landing'>
             <div className="landing-header login-form-container">

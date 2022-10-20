@@ -1,11 +1,41 @@
 import '../css/main.css';
-import MenuItem from './menuItem';
-import { Link } from 'react-router-dom';
+import OrderItemForm from './orderForm';
+import {useNavigate} from 'react-router-dom';
 
-function Main(props) {
+function Order(props) {
+    const navigate = useNavigate();
+
+    function sendOrder(e) {
+        e.preventDefault();
+        const orderList = [];
+        for (let i = 0; i < e.target.length; i++) {
+            if (e.target[i].checked) {
+                const orderInfo = (e.target[i].name).split(',');
+                orderList.push({'name': orderInfo[0], 'price': orderInfo[1]});
+            }
+        }
+        
+        const url = 'http://localhost:5000/order';
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-type': 'application/json; charset=UTF=8'},
+            body: JSON.stringify({
+                order: orderList,
+            })
+        };
+
+        fetch(url, requestOptions)
+        .then(data => {
+            return data.json();
+        })
+        .then(res => {
+            props.getOrderNumber(res['order_number']);
+            navigate('/School-restaurant-page/order/complete');
+        })
+    }
 
     return (
-        <div className="main">
+        <form className="main" onSubmit={sendOrder}>
             <div className="main-header">
                 <div className="main-header-texts">
                     <p className="main-header-tiitle"> Menu </p>
@@ -30,7 +60,7 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.entryMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients} type={item.type}/>;
+                            return  <OrderItemForm name={item.name} price={item.price} ingredients={item.ingredients} type={item.type} orderType='entry'/>;
                         })}
                     </div>
                 </div>
@@ -49,7 +79,7 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.pizzaMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients} type={item.type}/>;
+                            return  <OrderItemForm name={item.name} price={item.price} ingredients={item.ingredients} type={item.type} orderType='pizza'/>;
                         })}
                     </div>
                 </div>
@@ -68,7 +98,7 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.pastaMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients} type={item.type}/>;
+                            return  <OrderItemForm name={item.name} price={item.price} ingredients={item.ingredients} type={item.type} orderType='pasta'/>;
                         })}
                     </div>
                 </div>
@@ -87,16 +117,16 @@ function Main(props) {
                     </div>
                     <div className="menu-items">
                         {props.drinkMenu.map((item) => {
-                            return <MenuItem name={item.name} price={item.price} ingredients={item.ingredients}/>;
+                            return  <OrderItemForm name={item.name} price={item.price} ingredients={item.ingredients} orderType='drinks'/>;
                         })}
                     </div>
                 </div>
             </div>
             <div class='main-btn-container'>
-                <p className="order-btn">CLICK <Link to='/School-restaurant-page/order/' className="navigate-link">HERE</Link> TO ORDER ONLINE</p>
+                <button type='submit' className="order-btn-form">SUBMIT ORDER</button>
             </div>
-        </div> 
+        </form> 
     )
 }
 
-export default Main
+export default Order;
